@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +81,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static/'
+
 
 
 # Password validation
